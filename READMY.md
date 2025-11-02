@@ -1,0 +1,1 @@
+обучающие курсы: https://stepik.org/course/96832/syllabus
