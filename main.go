@@ -12,7 +12,14 @@ func diff(from string, to string) float64 {
 	toDuration, _ := time.ParseDuration(to)
 	toMin := time.Duration.Minutes(toDuration)
 
-	return toMin - fromMin
+	res := toMin - fromMin
+
+	if res < 0 {
+		return res * -1
+	} else {
+		return res
+	}
+
 }
 
 func main() {
@@ -25,7 +32,7 @@ func main() {
 	fmt.Println("go" + "lang")        // golang
 
 	// Напишите программу, которая считает количество минут во временном отрезке.
-	// 1h30m = 90 min
-	// 300s = 5 min
-	// 10m = 10 min
+	fmt.Println("1h30m = 90 min", diff("1h30m", "90 min"))
+	fmt.Println("300s = 5 min", diff("300s", "5 min"))
+	fmt.Println("10m = 10 min", diff("10m", "10 min"))
 }
