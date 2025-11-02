@@ -19,7 +19,6 @@ func diff(from string, to string) float64 {
 	} else {
 		return res
 	}
-
 }
 
 func main() {
