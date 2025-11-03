@@ -64,5 +64,11 @@ func main() {
 		os.Exit(1)
 	}
 
+	err = execCommand(fmt.Sprintf("git push"))
+	if err != nil {
+		fmt.Printf("Ошибка при git push: %v\n", err)
+		os.Exit(1)
+	}
+
 	os.Exit(0)
 }
