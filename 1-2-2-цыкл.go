@@ -31,5 +31,19 @@ func main() {
 		j++
 	}
 
+	var matrix [4][4]int
+	matrix[2][2] = 22
+
+	fmt.Println((matrix))
+
+	fmt.Println("matrix")
+	for _, line := range matrix {
+		for _, item := range line {
+			fmt.Print(item, " ")
+		}
+
+		fmt.Println()
+	}
+
 	fmt.Println("\n")
 }

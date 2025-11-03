@@ -35,6 +35,12 @@ func main() {
 	// 42
 
 	var f float64 = 12.34
+	f = 10.0
+	fmt.Println(f)
+	// 12.34
+
+	const c float64 = 12.34
+	// c = 1
 	fmt.Println(f)
 	// 12.34
 }
