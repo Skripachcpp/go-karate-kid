@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	arr := [...]int{1, 2, 3, 4, 5}
-
-	fmt.Println(arr)
+	s := make([]string, 3) // узнать чем крут make
+	fmt.Printf("empty: %#v\n", s)
 }
